@@ -30,4 +30,6 @@ if st.button("Predict Cluster"):
     cluster = gmm.predict(user_data_scaled)[0]
     st.success(f"The predicted cluster is: **{cluster}**")
 
+st.divider()
+
 st.image("Cluster image.png", caption="The Clusters")
